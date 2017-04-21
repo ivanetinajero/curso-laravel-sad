@@ -78,8 +78,9 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Hola Mundo
+                <div class="title m-b-md"> 	
+							Hola Mundo			     
+                   
                 </div>
 
                 <div class="links">

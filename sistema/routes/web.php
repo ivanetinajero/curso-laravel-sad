@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Crear todas las rutas para este controler (CRUD)
+Route::resource('productos','ProductosController');
+Route::get('productos/activar','ProductosController@activar');
+
+/*
 Route::get('/create', function () {
     return view('personas.formPerson');
 });
@@ -88,7 +93,12 @@ Route::get('/productos/delete2', function () {
     return $numRows;
 });
 
+Route::get('query1','QueryController@index');
+Route::get('query2','QueryController@index2');
 
+Route::get('query3','QueryController@getProductos');
+Route::get('query4','QueryController@getProductosInactivos');
+Route::get('query5/{estatus}','QueryController@getProductosEstatus');
 
 Route::put('/person/', function (){
 
@@ -102,4 +112,4 @@ Route::patch('/person/', function (){
 
 });
 
-
+*/
