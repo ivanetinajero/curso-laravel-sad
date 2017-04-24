@@ -12,11 +12,11 @@
     <title>@yield('titulo')</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">    
+    <link href="{{ asset('bootstrap/css/bootstrap-theme.min.css')}}" rel="stylesheet">    
     <!-- Custom styles for this template -->
-    <link href="bootstrap/css/theme.css" rel="stylesheet">
+    <link href="{{ asset('bootstrap/css/theme.css')}}" rel="stylesheet">
 
   </head>
 
@@ -72,6 +72,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>    
+    <script src="{{ asset('bootstrap/js/bootstrap.min.js')}}"></script>    
   </body>
 </html>
